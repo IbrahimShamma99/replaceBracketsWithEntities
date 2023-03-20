@@ -23,5 +23,4 @@ const replaceBracketsWithEntity = (query: string, props: object): string => {
   }
 };
 
-
-export default replaceBracketsWithEntity;
+export { replaceBracketsWithEntity };

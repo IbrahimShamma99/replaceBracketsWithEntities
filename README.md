@@ -1,3 +1,3 @@
-# random-words-genertor
+# Replace Brackets in string with values
 
-# Generate one or more common English words
+
