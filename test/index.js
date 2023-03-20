@@ -1,4 +1,4 @@
-const replaceBracketsWithEntity = require("../dist/index.js");
+const { replaceBracketsWithEntity } = require("../dist/index.js");
 let test = require("tape");
 
 test("timing test", function (t) {
@@ -9,9 +9,9 @@ test("timing test", function (t) {
         ancilary1: "brand",
         ancilary2: "channel",
         s_m: "BM",
-        ancilary2_operation: "brand not in kiri",
+        ancilary2_operation: "brand not in ('x')",
       }
     ),
-    "select {ancilary1},{ancilary2} from {s_m} where {ancilary2_operation}"
+    "select brand,channel from BM where brand not in ('x')"
   );
 });
